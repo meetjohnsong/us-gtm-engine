@@ -19,15 +19,58 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="min-h-screen bg-[#fbfbfc] text-gray-900 antialiased">
+        <header className="border-b border-gray-200 sticky top-0 bg-white/80 backdrop-blur z-50">
+          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div className="font-semibold tracking-tight">US GTM Engine</div>
+
+            <nav className="hidden md:flex gap-6 text-sm text-gray-600">
+              <a href="/approach" className="hover:text-gray-900">
+                Approach
+              </a>
+              <a href="/deliverables" className="hover:text-gray-900">
+                Deliverables
+              </a>
+              <a href="/about" className="hover:text-gray-900">
+                About
+              </a>
+              <a href="/contact" className="hover:text-gray-900">
+                Contact
+              </a>
+            </nav>
+
+            <a
+              href="/contact"
+              className="text-sm rounded-lg bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition"
+            >
+              Book a call
+            </a>
+          </div>
+        </header>
+
         {children}
+
+        <footer className="border-t border-gray-200 mt-16">
+          <div className="max-w-6xl mx-auto px-6 py-10 text-sm text-gray-600 flex flex-col md:flex-row gap-4 justify-between">
+            <div>© {new Date().getFullYear()} US GTM Engine</div>
+            <div className="flex gap-4">
+              <a className="hover:text-gray-900" href="/approach">
+                Approach
+              </a>
+              <a className="hover:text-gray-900" href="/deliverables">
+                Deliverables
+              </a>
+              <a className="hover:text-gray-900" href="/contact">
+                Contact
+              </a>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
