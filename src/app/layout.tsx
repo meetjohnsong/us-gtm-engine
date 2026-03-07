@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "US GTM Engine",
+  title: "US GTM Engine | US Market Entry & GTM Validation System",
   description:
-    "US GTM Engine is the operating system for validating and launching B2B technology companies in the United States.",
+    "US GTM Engine helps international technology companies validaate US market demand and buld early pipeline through a structured 90-120 day operating sprint",
 };
 
 export default function RootLayout({
