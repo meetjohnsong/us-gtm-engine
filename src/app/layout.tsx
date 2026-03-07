@@ -16,7 +16,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "US GTM Engine | US Market Entry & GTM Validation System",
   description:
-    "US GTM Engine helps international technology companies validaate US market demand and buld early pipeline through a structured 90-120 day operating sprint",
+    "US GTM Engine helps international technology companies validate US market demand and build early pipeline through a structured 90-120 day operating sprint",
+openGraph: {
+    title: "US GTM Engine",
+    description:
+      "Validation-first operating system for international companies entering the US market.",
+    url: "https://us-gtm-engine.vercel.app",
+    siteName: "US GTM Engine",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
