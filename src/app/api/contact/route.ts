@@ -8,7 +8,7 @@ export async function POST(req: Request) {
     const { name, email, company, message } = body;
 
     const { data, error } = await resend.emails.send({
-      from: "US GTM Engine <onboarding@resend.dev>",
+      from: "US GTM Engine <noreply@usgtmengine.com>",
       to: "sales@usgtmengine.com",
       replyTo: email,
       subject: "New inquiry from US GTM Engine website",
