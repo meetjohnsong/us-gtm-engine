@@ -17,7 +17,7 @@ export default function SiteHeader() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="hover:opacity-80 transition">
           <Image
-            src="/image/about/US_GTM_Engine_Transparent1.png"
+            src="/images/about/US_GTM_Engine_Logo_Transparent1.png"
             alt="US GTM Engine"
             width={180}
             height={45}
