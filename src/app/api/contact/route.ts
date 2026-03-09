@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { name, email, company, message } = body;
 
-    const result = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "US GTM Engine <onboarding@resend.dev>",
       to: "sales@usgtmengine.com",
       replyTo: email,
@@ -22,9 +22,18 @@ export async function POST(req: Request) {
       `,
     });
 
-    return Response.json({ success: true, result });
+    if (error) {
+      console.error("Resend API error:", error);
+
+      return Response.json(
+        { success: false, error },
+        { status: 500 }
+      );
+    }
+
+    return Response.json({ success: true, data });
   } catch (error) {
-    console.error("Resend error:", error);
+    console.error("Route error:", error);
 
     return Response.json(
       { success: false, error: String(error) },
