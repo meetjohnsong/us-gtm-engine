@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function SiteHeader() {
@@ -14,11 +15,14 @@ export default function SiteHeader() {
   return (
     <header className="border-b border-gray-200 sticky top-0 bg-white/80 backdrop-blur z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link
-          href="/"
-          className="text-lg font-semibold tracking-tight text-gray-900 hover:opacity-80 transition"
-        >
-          US GTM Engine
+        <Link href="/" className="hover:opacity-80 transition">
+          <Image
+            src="/US_GTM_Engine_Transparent1.png"
+            alt="US GTM Engine"
+            width={180}
+            height={45}
+            priority
+          />
         </Link>
 
         <nav className="hidden md:flex gap-6 text-sm">
