@@ -78,7 +78,7 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen bg-white text-gray-900">
-      {/* HERO */}
+   {/* HERO */}
       <section className="relative bg-gray-950 text-white overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <img
@@ -89,9 +89,15 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" />
         </div>
 
-        <div className="max-w-6xl mx-auto px-6 py-24">
+        {/* ↓ py-24 → py-14 to shorten the dark hero band */}
+        <div className="max-w-6xl mx-auto px-6 py-14">
           <p className="text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-blue-400">
             About
+          </p>
+
+          {/* ↓ NEW: tagline added here, matching homepage style */}
+          <p className="mt-2 text-lg md:text-xl font-medium text-blue-500 tracking-wide">
+            A Better Way To Enter The US Market
           </p>
 
           <h1 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.05] text-gray-950">

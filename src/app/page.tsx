@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className="max-w-6xl mx-auto px-6 py-24">
           <p className="text-xs md:text-sm font-medium uppercase tracking-[0.2em] text-blue-400">
-            A different way to enter the US market.
+            A better way to enter the US market.
           </p>
 
           <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.05]">
