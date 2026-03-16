@@ -96,7 +96,7 @@ export default function AboutPage() {
           </p>
 
           {/* ↓ NEW: tagline added here, matching homepage style */}
-          <p className="mt-5 text-xs md:text-sm font-medium text-blue-500 tracking-wide">
+          <p className="mt-6 text-xs md:text-sm font-medium text-blue-500 tracking-wide">
   A Better Way To Enter The US Market
 </p>
 
