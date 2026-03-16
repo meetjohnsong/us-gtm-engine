@@ -51,7 +51,7 @@ export default function RootLayout({
               <a className="hover:text-gray-900" href="/deliverables">
                 Deliverables
               </a>
-              <a classname="hover:text-gray-900" href="/about">
+              <a className="hover:text-gray-900" href="/about">
               About
               </a>
               <a className="hover:text-gray-900" href="/contact">
